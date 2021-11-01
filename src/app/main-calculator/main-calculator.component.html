@@ -1,0 +1,57 @@
+<div class="back">
+  <mat-card class="card-1">
+    <mat-card-content>
+    <mat-tab-group [color]="color">
+      <mat-tab label="Calculator">
+        <mat-card class="card">
+            <input class="input" matInput maxLenght="7" placeholder="" value="{{this.numberText}}" disabled>
+  <mat-card-content>
+            <button mat-fab class="operation" id="clear" value="C" (click)="Clear()">C</button>
+              <button mat-button class="operation" id="sum" value="+" (click)="Add('+')">+</button>
+              <button mat-button class="operation" id="subt" value="-" (click)="Add('-')">-</button>
+              <button mat-button class="operation" id="mult" value="*" (click)="Add('*')">*</button>
+              <button mat-button class="operation" id="div" value="/" (click)="Add('/')">/</button>
+              <br>
+
+              <button mat-button class="button"  value="1" (click)="Add('1')">1</button>
+              <button mat-button class="button" value="2" (click)="Add('2')">2</button>
+              <button mat-button class="button" value="3" (click)="Add('3')">3</button>
+
+              <br>
+              <button mat-button class="button" value="4" (click)="Add('4')">4</button>
+              <button mat-button class="button" value="5" (click)="Add('5')">5</button>
+              <button mat-button class="button" value="6" (click)="Add('6')">6</button>
+
+              <br>
+              <button mat-button class="button" value="7" (click)="Add('7')">7</button>
+              <button mat-button class="button" value="8" (click)="Add('8')">8</button>
+              <button mat-button class="button" value="9" (click)="Add('9')">9</button>
+
+              <br>
+              <button mat-button class="button" value="." id="pt" (click)="Add('.')">.</button>
+              <button mat-button class="button" value="0" id="zero" (click)="Add('0')">0</button>
+              <br>
+              <button mat-raised-button  class="operation" id="equal" value="=" (click)="Result()">=</button>
+
+              <br>
+        </mat-card-content>
+        </mat-card>
+
+      </mat-tab>
+      <mat-tab label="History">
+        <mat-card class="card" id="card-2">
+          <mat-card-content>
+        <mat-list-item *ngFor="let result of history">
+          <h3 class="history" matLine>{{result + numberText}}</h3>
+          <mat-divider></mat-divider>
+      </mat-list-item>
+      </mat-card-content>
+      </mat-card>
+      </mat-tab>
+    </mat-tab-group>
+    </mat-card-content>
+    </mat-card>
+  </div>
+
+
+

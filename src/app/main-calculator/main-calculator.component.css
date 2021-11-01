@@ -1,0 +1,110 @@
+.back{
+  position: relative;
+  height: 694px;
+  background: no-repeat;
+  background: #f0aec1;
+}
+
+.card-1{
+  width: 541px;
+ height: 550px;
+ border-radius: 25px;
+ left: 32%;
+ top: 70px;
+ box-shadow: 0 19px 38px #DC143C, 0 15px 12px #DC143C;
+}
+
+.card{
+
+  border-radius: 14px;
+  display: inline-block;
+  height: 375px;
+  margin: 3rem;
+  position: relative;
+  width: 413px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  text-align: -webkit-center;
+}
+
+.input{
+    position: relative;
+    left: -27px;
+    width: 259px;
+    height: 44px;
+    border-radius: 10px;
+    top: 15px;
+    border: none;
+    font-size: 20px;
+    background: #fcf0f2;
+}
+
+.button{
+  height: 70px;
+  color: #DC143C;
+  width: 83px;
+  left: -24px;
+  border-radius: 10px;
+  top: -18px;
+  margin: 0 2px;
+  font-size: 22px;
+}
+
+#pt{
+  left: -68px;
+}
+
+#zero{
+  left: -68px;
+}
+
+.operation{
+  height: 45px;
+  background: #DC143C;
+  color: #1a2930;
+  left: 9px;
+  margin: 0 3px;
+  font-size: 18px;
+}
+
+
+#clear{
+  position: relative;
+  height: auto;
+  left: 289.792px;
+  top: -37px;
+}
+
+#sum {
+  position: relative;
+  height: auto;
+  left: 227.821px;
+  top: 53px;
+}
+
+#subt{
+  position: relative;
+  height: auto;
+  left: 157.871px;
+  top: 101px;
+}
+
+#mult{
+  position: relative;
+  height: auto;
+  left: 87.9059px;
+  top: 149px;
+}
+
+#div{
+  position: relative;
+  height: auto;
+  top: 198px;
+  left: 17.9309px;
+}
+
+#equal{
+  position: relative;
+  left: 115px;
+  top: -78px;
+  width: 139px;
+}
